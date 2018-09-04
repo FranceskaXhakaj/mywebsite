@@ -1,0 +1,7 @@
+To Do:
+
+-carousel
+-font-color navbar text
+-font projects
+-add stuff
+-publication subheaders (i.e.conference + some mroe space)
