@@ -10,5 +10,4 @@ To Do:
 --clean up html
 
 
---on resume add cv
 --add classinsight
