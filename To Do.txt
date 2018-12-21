@@ -1,7 +1,8 @@
 To Do:
 
 -carousel
--font-color navbar text
--font projects
--add stuff
--publication subheaders (i.e.conference + some mroe space)
+-add projects/fix projects?
+-sticky navbar
+-citations pdf in separate column in a 2 column table like div
+-separate section on teaching?
+--linked in link?
