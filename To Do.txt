@@ -1,8 +1,14 @@
 To Do:
 
--carousel
 -add projects/fix projects?
 -sticky navbar
 -citations pdf in separate column in a 2 column table like div
 -separate section on teaching?
---linked in link?
+--linkedin link?
+
+--style stuff into css file not in html
+--clean up html
+
+
+--on resume add cv
+--add classinsight
