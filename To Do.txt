@@ -1,16 +1,15 @@
 To Do:
 
--add projects/fix projects?
+-add projects/fix projects? (For each project put pubs)
 -sticky navbar
 -citations pdf in separate column in a 2 column table like div
 --linkedin link?
 
 --style stuff into css file not in html
 --clean up html
- 
 
+===========================================
 
-Description:--->teaching + invited talk (annag, kelly, iris examples)
 --> linked in fix
 
 
@@ -18,7 +17,6 @@ Description:--->teaching + invited talk (annag, kelly, iris examples)
 
 =================
 
--- add to resume paper reviews for CHI late breaking work + SIGCSE reviews
+
 -- pietr talks + Peter brusilovsky talk
 -- cinference talks
--- paper reviews for confs you have done
