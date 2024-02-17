@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Exercise Menu</h3>
+            <ul id="exerciseMenu">
+                <h3> Unit 1 </h3>
+                <li>
+                    <h4>Algorithms and Abstraction</h4>
+                    <ul>
+                        <li><a href="#exercise1.1">Exercise 1.1</a></li>
+                        <li><a href="#exercise1.3">Exercise 1.2</a></li>
+                        <li><a href="#exercise1.3">Exercise 1.3</a></li>
+                        <li><a href="#exercise1.4">Exercise 1.4</a></li>
+                        <li><a href="#exercise1.5">Exercise 1.5</a></li>
+                        <li><a href="#exercise1.6">Exercise 1.6</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Programming Basics</h4>
+                    <ul>
+                        <li><a href="#exercise2.1">Exercise 2.1</a></li>
+                        <li><a href="#exercise2.3">Exercise 2.2</a></li>
+                        <li><a href="#exercise2.3">Exercise 2.3</a></li>
+                        <li><a href="#exercise2.4">Exercise 2.4</a></li>
+                        <li><a href="#exercise2.5">Exercise 2.5</a></li>
+                        <li><a href="#exercise2.6">Exercise 2.6</a></li>
+                    </ul>
+                </li>
+
+                <h3> Unit 2 </h3>
+                <li>
+                    <h4>Topic 3</h4>
+                    <ul>
+                        <li><a href="#exercise6">Exercise 6</a></li>
+                        <li><a href="#exercise7">Exercise 7</a></li>
+                        <li><a href="#exercise8">Exercise 8</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1 id="exerciseTitle">Unit 1</h1>
+            <div class="topic">
+                <h2 id="exerciseTitle">Algorithms and Abstraction</h2>
+
+                <div class="exercise-container" id="exercise1.1">
+                    <h3></h3>
+                    <p class="exercise-description">What are algorithms? Can you think of some examples of them in your daily life?</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.1)">Show Solution</button>
+                    <div id="solution1.1" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.2">
+                    <h3></h3>
+                    <p class="exercise-description">What are the core parts of an algorithm? (Hint: there are 3!)</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.2)">Show Solution</button>
+                    <div id="solution1.2" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.3">
+                    <h3></h3>
+                    <p class="exercise-description">What is abstraction? Can you think of an example from the real world or the computing world of abstraction?</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.3)">Show Solution</button>
+                    <div id="solution1.3" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.4">
+                    <h3></h3>
+                    <p class="exercise-description">Write a step-by-step algorithm at a low level of abstraction for making a cup of noodles. Assume you have access to all the ingredients i.e., chopsticks, cup noodles, hot water, the sauce packets, etc. Break down the process into clear, simple instructions that someone can follow if they have no prior knowledge of utensils and ingredients and what each item is, how to use them and in which order.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.4)">Show Solution</button>
+                    <div id="solution1.4" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.5">
+                    <h3></h3>
+                    <p class="exercise-description">Now write the same algorithm but at a medium level of abstraction. They have knowledge about each of the ingredients and how to use the given items but not how to make the noodles.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.5)">Show Solution</button>
+                    <div id="solution1.5" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.6">
+                    <h3></h3>
+                    <p class="exercise-description">Now write the same algorithm but at a high level of abstraction.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.6)">Show Solution</button>
+                    <div id="solution1.6" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <h2 id="exerciseTitle">Programming Basics</h2>
+
+                <div class="exercise-container" id="exercise2.1">
+                    <h3></h3>
+                    <p class="exercise-description">For each of the data values on the left, write on the right what data type it is:
+
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> 0 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> False </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "CMU" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 14 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> True </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> -7 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 3.14 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                        </table>
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.1)">Show Solution</button>
+                    <div id="solution2.1" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.2">
+                    <h3></h3>
+                    <p class="exercise-description">What will the code on the right evaluate to?
+</p>
+                    <button class="show-solution-btn" onclick="showSolution(2.2)">Show Solution</button>
+                    <div id="solution2.2" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.3">
+                    <h3></h3>
+                    <p class="exercise-description">For each of the expressions below, what type will it evaluate to?</p>
+                    <button class="show-solution-btn" onclick="showSolution(2.3)">Show Solution</button>
+                    <div id="solution2.3" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.4">
+                    <h3></h3>
+                    <p class="exercise-description">Using the Python console/shell, display some text using the function print. 
+.</p>
+                    <button class="show-solution-btn" onclick="showSolution(2.4)">Show Solution</button>
+                    <div id="solution2.4" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.5">
+                    <h3></h3>
+                    <p class="exercise-description">Using the Python console/shell, store a string value in a variable and then print the contents of the variable using the print function. </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.5)">Show Solution</button>
+                    <div id="solution2.5" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.6">
+                    <h3></h3>
+                    <p class="exercise-description">Repeat the above two exercises using the editor window.</p>
+                    <button class="show-solution-btn" onclick="showSolution(2.6)">Show Solution</button>
+                    <div id="solution2.6" class="solution" style="display: none;">
+                        <p>Solution: <code>function addNumbers(a, b) { return a + b; }</code></p>
+                    </div>
+                </div>
+
+                <!-- Add the rest of the exercises here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
