@@ -13,6 +13,8 @@ body {
     padding: 20px;
     height: 100%; /* Set height to 100% of the viewport height */
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-family: Georgia, serif;
 }
 
 .sidebar h3 {
@@ -31,6 +33,8 @@ body {
 .content {
     width: 1000px;
     padding: 20px;
+    font-size: 15px;
+    font-family: Georgia, serif;
 }
 
 .exercise-container {
