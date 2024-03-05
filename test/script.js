@@ -7,8 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function showSolution(exerciseNumber) {
+    console.log("here");
+    console.log(exerciseNumber);
     var solution = document.getElementById('solution' + exerciseNumber);
+    console.log("here2");
+    console.log(solution);
     solution.style.display = (solution.style.display === 'none' || solution.style.display === '') ? 'block' : 'none';
+    console.log("here3");
 }
 
 function showExercise(exerciseNumber) {
