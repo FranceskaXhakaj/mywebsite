@@ -4722,7 +4722,500 @@ def print_pattern_4():
 
             </div>
 
-            <!-- ======================================= -->
+<!-- ======================================= -->
+
+            <div class="topic">
+                <h2>For Loops</h2>
+<div class="exercise-container" id="exercise9.1">
+    <p class="exercise-description">[9.1] How many times will "Hi!" be printed?</p>
+    <pre><code class="language-python">for i in range(9):
+    print("Hi!")</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.1)">Show Solution</button>
+    <div id="solution9.1" class="solution" style="display: none;">
+        <p>Solution: "Hi!" will be printed 9 times. The reason for that is that range will generate the values: 0, 1, 2, 3, 4, 5, 6, 7, 8 and i will take each of those values, making the loop run 9 times.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.2">
+    <p class="exercise-description">[9.2] How many iterations are performed by the following loop?</p>
+    <pre><code class="language-python">for i in range(10, 20):
+    # Some code here</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.2)">Show Solution</button>
+    <div id="solution9.2" class="solution" style="display: none;">
+        <p>Solution: The loop will perform 10 iterations. The reason for that is that range will generate the values: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 and i will take each of those values, making the loop run 10 times.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.3">
+    <p class="exercise-description">[9.3] What will the output of the following code be?</p>
+    <pre><code class="language-python">for i in range(2, 8, 2):
+    print(i * 3)</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.3)">Show Solution</button>
+    <div id="solution9.3" class="solution" style="display: none;">
+        <p>Solution: The output of the code will be 6, 12, 18. Range will generate the values 2, 4, 6 which i will take, thus for i * 3 we will get 6, 12, 18.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.4">
+    <p class="exercise-description">[9.4] What pattern is printed by the following code?</p>
+    <pre><code class="language-python">for i in range(5, 0, -1):
+    print('*' * i)</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.4)">Show Solution</button>
+    <div id="solution9.4" class="solution" style="display: none;">
+        <p>Solution: The pattern printed by the code is an upside-down pyramid. Range will generate the values 5, 4, 3, 2, 1 and i will take each of those values. Thus the first iteration "*****" will be printed, the second one "****", the third one "***" and so on.</p>
+    </div>
+</div>
+
+
+<div class="exercise-container" id="exercise9.5">
+    <p class="exercise-description">[9.5] Trace the code below. What will it print once the code is done executing?</p>
+    <pre><code class="language-python">for num in range(7, 24, 2):
+    print(num)</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.5)">Show Solution</button>
+    <div id="solution9.5" class="solution" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Iteration #</th>
+                    <th>num</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.6">
+    <p class="exercise-description">[9.6] Trace the code below. What will it print once the code is done executing?</p>
+    <pre><code class="language-python">
+for num in range(7, 13):
+    if num % 2 == 0:
+        print("even")
+    else:
+        print("odd")</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.6)">Show Solution</button>
+    <div id="solution9.6" class="solution" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Iteration #</th>
+                    <th>num</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>7</td>
+                    <td>odd</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>even</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>9</td>
+                    <td>odd</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>even</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>odd</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>even</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="exercise-container" id="exercise9.7">
+    <p class="exercise-description">[9.7] Trace the code below. What will it print once the code is done executing?</p>
+    <pre><code class="language-python">for num in range(15, 35):
+    if num % 3 == 0:
+        print("multiple of 3")
+    elif num % 5 == 0:
+        print("multiple of 5")
+    else:
+        print("not multiple of 3 or 5")</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.7)">Show Solution</button>
+    <div id="solution9.7" class="solution" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Iteration #</th>
+                    <th>num</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>16</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>17</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>18</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>19</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>21</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>23</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>24</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>25</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>27</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>28</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>29</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>30</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>31</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>32</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>33</td>
+                    <td>multiple of 3</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>34</td>
+                    <td>not multiple of 3 or 5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.8">
+    <p class="exercise-description">[9.8] What will the code below print once the code is done executing?</p>
+    <pre><code class="language-python">n = 3
+k = 4
+
+for i in range(2 * n + 1):
+    j = k - i
+    while j > 0:
+        print(j)
+        j -= 2
+    print()</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.8)">Show Solution</button>
+    <div id="solution9.8" class="solution" style="display: none;">
+        <p>Output:</p>
+        <pre><code class="language-plaintext">4
+2
+
+3
+1
+
+2
+
+1</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.9">
+    <p class="exercise-description">[9.9] What will the value of 'total' be after the following code executes? What about the value of num?</p>
+    <pre><code class="language-python">total = 0
+for num in range(3, 15):
+    total += num</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.9)">Show Solution</button>
+    <div id="solution9.9" class="solution" style="display: none;">
+        <p>Value of 'total': 102</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise910">
+    <p class="exercise-description">[9.10] What will be the value of 'result' after the following code executes?</p>
+    <pre><code class="language-python">result = 1
+for num in range(10, 0, -1):
+    result *= num</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(910)">Show Solution</button>
+    <div id="solution910" class="solution" style="display: none;">
+        <p>Value of 'result': 3628800</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.11">
+    <p class="exercise-description">[9.11] Convert the following while loop to a for loop. Then, what will the value of product be after the for-loop code executes?</p>
+    <pre><code class="language-python">product = 1
+for outer_num in range(2, 6):
+    for inner_num in range(1, 6):
+        product = outer_num * inner_num</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.11)">Show Solution</button>
+    <div id="solution9.11" class="solution" style="display: none;">
+    <pre><code class="language-python">
+product = 1
+outer_num = 2
+while outer_num < 6:
+    inner_num = 1
+    while inner_num < 6:
+        product = outer_num * inner_num
+        inner_num += 1
+    outer_num += 1
+</code></pre>
+        <p>Value of 'product': 25</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.12">
+    <p class="exercise-description">[9.12] Convert this for loop to a while loop.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.12)">Show Solution</button>
+    <div id="solution9.12" class="solution" style="display: none;">
+        <pre><code class="language-python">outer = 1
+while outer < 7:
+    inner = 1
+    while inner < outer + 2:
+        print(inner)
+        inner += 2
+    outer += 1</code></pre>
+    </div>
+</div>
+
+
+<div class="exercise-container" id="exercise9.13">
+    <p class="exercise-description">[9.13] Write a for loop that prints out the integers 2 through 10, each on a new line.</p>
+    <button class="show-solution-btn" onclick="showSolution(9.13)">Show Solution</button>
+    <div id="solution9.13" class="solution" style="display: none;">
+        <pre><code class="language-python">for i in range(2, 11):
+    print(i)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.14">
+    <p class="exercise-description">[9.14] Display every other number from -10 to -1 using a for loop.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.14)">Show Solution</button>
+    <div id="solution9.14" class="solution" style="display: none;">
+        <pre><code class="language-python">for i in range(-10, 0, 2):
+    print(i)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.15">
+    <p class="exercise-description">[9.15] Write a function that takes a parameter n and counts all the multiples of 5 between 1 to n, and returns this count. Use a for loop.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.15)">Show Solution</button>
+    <div id="solution9.15" class="solution" style="display: none;">
+        <pre><code class="language-python">def countMultiples(n):
+    count = 0
+    for num in range(1, n + 1):
+        if num % 5 == 0:
+            count += 1
+    return count</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.16">
+    <p class="exercise-description">[9.16] Write a for loop that goes through numbers 1 through 20, printing "Fizz" for multiples of 3, "Buzz" for multiples of 5, "FizzBuzz" for multiples of both 3 and 5, and otherwise printing the number itself.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.16)">Show Solution</button>
+    <div id="solution9.16" class="solution" style="display: none;">
+        <pre><code class="language-python">for num in range(1, 21):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.17">
+    <p class="exercise-description">[9.17] Write a for loop that prints every other odd number between 1 and 50. For example, it should print 1, 5, 9, 13, 15… and so on.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.17)">Show Solution</button>
+    <div id="solution9.17" class="solution" style="display: none;">
+       <pre><code class="language-python">for i in range(1, 51, 4):
+    print(i)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.18">
+    <p class="exercise-description">[9.18] Convert the following while loop into an equivalent for loop:</p>
+    <pre><code class="language-python">count = 0
+while count < 5:
+    print("Count:", count)
+    count += 1</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(9.18)">Show Solution</button>
+    <div id="solution9.18" class="solution" style="display: none;">
+        <pre><code class="language-python">for count in range(5):
+    print("Count:", count)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise9.19">
+    <p class="exercise-description">[9.19] Write a for loop that will calculate and print the sum of the squares of numbers from 1 to 5.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(9.19)">Show Solution</button>
+    <div id="solution9.19" class="solution" style="display: none;">
+        <pre><code class="language-python">sum_of_squares = 0
+for num in range(1, 6):
+    sum_of_squares += num ** 2
+
+print("Sum of squares:", sum_of_squares)</code></pre>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise920">
+    <p class="exercise-description">[9.20] Write a program to print the following star pattern using for loops.</p>
+    <pre><code class="language-python">
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(920)">Show Solution</button>
+    <div id="solution920" class="solution" style="display: none;">
+        <pre><code class="language-python">rows = 5
+rows = 5
+
+for i in range(0, rows):
+    s = ""
+    for j in range(0, i + 1):
+        s = s + "*"
+    print(s)
+
+for i in range(rows, 0, -1):
+    s = ""
+    for j in range(0, i - 1):
+        s = s + "*"
+    print(s)
+
+</code></pre>
+    </div>
+</div>
+
+
+
+
+                
+               
+            </div>
+
+<!-- ======================================= -->
 
                 
             </div>
