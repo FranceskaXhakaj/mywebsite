@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>Programming Basics</h4>
+                    <ul>
+                        <li><a href="#exercise2.1">Exercise 2.1</a></li>
+                        <li><a href="#exercise2.3">Exercise 2.2</a></li>
+                        <li><a href="#exercise2.3">Exercise 2.3</a></li>
+                        <li><a href="#exercise2.4">Exercise 2.4</a></li>
+                        <li><a href="#exercise2.5">Exercise 2.5</a></li>
+                        <li><a href="#exercise2.6">Exercise 2.6</a></li>
+                        <li><a href="#exercise2.7">Exercise 2.7</a></li>
+                        <li><a href="#exercise2.8">Exercise 2.8</a></li>
+                        <li><a href="#exercise2.9">Exercise 2.9</a></li>
+                        <li><a href="#exercise210">Exercise 2.10</a></li>
+                        <li><a href="#exercise2.11">Exercise 2.11</a></li>
+                        <li><a href="#exercise2.12">Exercise 2.12</a></li>
+                        <li><a href="#exercise2.13">Exercise 2.13</a></li>
+                        <li><a href="#exercise2.14">Exercise 2.14</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- ======================================= -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Programming Basics</h2>
+
+                <div class="exercise-container" id="exercise2.1">
+                    <p class="exercise-description">[2.1] For each of the data values on the left, write on the right what data type it is:
+
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> 0 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> False </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "CMU" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 14 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> True </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> -7 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 3.14 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                        </table>
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.1)">Show Solution</button>
+                    <div id="solution2.1" class="solution" style="display: none;">
+                        <p>Solution: 
+
+                            <table>
+                            <tr>
+                                <td class="smaller-column"><code> 0 </code></td>
+                                <td class="larger-column"><code> int </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> False </code></td>
+                                <td class="larger-column"><code> bool </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "CMU" </code></td>
+                                <td class="larger-column"><code> str </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 14 </code></td>
+                                <td class="larger-column"><code> int </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> True </code></td>
+                                <td class="larger-column"><code> bool </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> -7 </code></td>
+                                <td class="larger-column"><code> int </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 3.14 </code></td>
+                                <td class="larger-column"><code> float </code></td>
+                            </tr>
+                        </table>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.2">
+                    <p class="exercise-description">[2.2] What will the code on the right evaluate to?
+
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> 3**3 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> (16-7)/3  </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Love" + "You" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Yay" * 3 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "yay" == "Yay" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 3 <= 3.14 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                        </table>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.2)">Show Solution</button>
+                    <div id="solution2.2" class="solution" style="display: none;">
+                        <p>Solution: 
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> 3**3 </code></td>
+                                <td class="larger-column"><code> 27 </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> (16-7)/3  </code></td>
+                                <td class="larger-column"><code> 3.0 </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Love" + "You" </code></td>
+                                <td class="larger-column"><code> “LoveYou” </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Yay" * 3 </code></td>
+                                <td class="larger-column"><code> “YayYayYay” </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "yay" == "Yay" </code></td>
+                                <td class="larger-column"><code> False </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 3 <= 3.14 </code></td>
+                                <td class="larger-column"><code> True </code></td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.3">
+                    <p class="exercise-description">[2.3] For each of the expressions below, what type will it evaluate to?
+
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> 15-110 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Hello" == "World" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "13" + "24" </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 6.0 * 1.0 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 4/2 </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                        </table>
+                    </p>
+
+                    <button class="show-solution-btn" onclick="showSolution(2.3)">Show Solution</button>
+                    <div id="solution2.3" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <table>
+                            <tr>
+                                <td class="smaller-column"><code> 15-110 </code></td>
+                                <td class="larger-column"><code> int </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "Hello" == "World" </code></td>
+                                <td class="larger-column"><code> bool </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> "13" + "24" </code></td>
+                                <td class="larger-column"><code> str </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 6.0 * 1.0 </code></td>
+                                <td class="larger-column"><code> float </code></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code> 4/2 </code></td>
+                                <td class="larger-column"><code> float </code></td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.4">
+                    <p class="exercise-description">[2.4] Using the Python console/shell, display some text using the function <code>print</code>. </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.4)">Show Solution</button>
+                    <div id="solution2.4" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <code>>>> print(“hey”)
+                            </code>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.5">
+                    <p class="exercise-description">[2.5] Using the Python console/shell, store a string value in a variable and then print the contents of the variable using the print function. </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.5)">Show Solution</button>
+                    <div id="solution2.5" class="solution" style="display: none;">
+                        <p>Solution: <code>
+                            <br>
+                            >>> s = “hey”
+                            <br>
+                            >>> print(s)
+                            </code>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.6">
+                    <p class="exercise-description">[2.6] Repeat the above two exercises using the editor window.</p>
+                    <button class="show-solution-btn" onclick="showSolution(2.6)">Show Solution</button>
+                    <div id="solution2.6" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <code>print(“hey)
+                                <br>s = “hey”
+                                <br>print(s)
+                            </code>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="exercise-container" id="exercise2.7">
+                    <p class="exercise-description">[2.7] What is the output from the following?
+
+                        <table>
+                            <tr>
+                                <td class="larger-column">
+                                    <code> 
+                                        1. <br>
+                                        a = 3<br>
+                                        b = 4<br>
+                                        x = a * b<br>
+                                        print(x)<br>
+                                    </code>
+                                </td>
+                                <td class="larger-column">
+                                    <code> 
+                                        2.<br>
+                                        a = 4<br>
+                                        b = 2<br>
+                                        x = a / b<br>
+                                        a - 2<br>
+                                        x + 3<br>
+                                        print(x)<br>
+                                    </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="larger-column">
+                                    <code> 
+                                        3.<br>
+                                        name = "Fran"<br>
+                                        name = "Kelly"<br>
+                                        print(name)<br>
+                                    </code>
+                                </td>
+                                <td class="larger-column">
+                                    <code> 
+                                        4.<br>
+                                        a = 3<br>
+                                        b = -5<br>
+                                        a = a * b<br>
+                                        print(a)<br>
+                                    </code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="larger-column">
+                                    <code> 
+                                        5.<br>
+                                        a = 4<br>
+                                        b = 2<br>
+                                        b = b - a<br>
+                                        b + 10<br>
+                                        print(b)<br>
+                                    </code>
+                                </td>
+                                <td class="larger-column">
+                                    <code> 
+                                        6.<br>
+                                        s = "Welcome"<br>
+                                        s = s + " to 15110"<br>
+                                        print(s)<br>
+                                    </code>
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    
+                    <button class="show-solution-btn" onclick="showSolution(2.7)">Show Solution</button>
+                    <div id="solution2.7" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br> The following are the printed output respective to each problem. 
+                            <br> 1: 12
+                            <br> 2: 2.0
+                            <br> 3: Kelly
+                            <br> 4: -15
+                            <br> 5: -2
+                            <br> 6: Welcome to 15110
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.8">
+                    <p class="exercise-description">[2.8] Write Python code to do the following:
+                        <ul> 
+                            <li> Create a variable named <code>num</code> and store the value 34 to it. </li> 
+                            <li> Add to <code>num</code> the value 10 and store the new value in <code>num</code>.</li> 
+                            <li> Change the data value of <code>num</code> to be “15-110”.</li> 
+                        </ul> 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.8)">Show Solution</button>
+                    <div id="solution2.8" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <code>
+                                <br>num = 34
+                                <br>num = num + 10
+                                <br>num = "15-110"
+                            </code>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.9">
+                    <p class="exercise-description">[2.9] Use the <code>print</code>function to print on the same line the string <code>“The value is: ”</code>, the boolean value <code>True</code>, and the numbers <code>34</code> and <code>0.7</code>.
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.9)">Show Solution</button>
+                    <div id="solution2.9" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <code>
+                                <br>print("The value is:", True, 34, 0.7)
+
+                            </code>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="exercise-container" id="exercise210">
+                    <p class="exercise-description">[2.10] You try to print your age in the Python shell/console as shown below, however you get the following error. What type of error is this error? What does the error mean, namely what is the issue with the code given?
+                        <br>
+                    <img src="images/ex2-10.png" style="width: 650px">
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(210)">Show Solution</button>
+                    <div id="solution210" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            The type of error is Runtime Error. The error is coming from using sing the + (addition) operator on a string data type and an integer data type. We can fix the error by changing the type of the integer to a string by str(28) or “28”.
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="exercise-container" id="exercise2.11">
+                    <p class="exercise-description">[2.11] Write a program (one or more lines of code) in Python that won’t run because it contains a syntax error. 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.11)">Show Solution</button>
+                    <div id="solution2.11" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <pre class="brush: python">
+def add_numbers(a, b) # example 1: missing colon
+    return a + b 
+
+print("Hello, world!"  # example 2: missing closing parenthesis
+
+def calculate_sum(a, b):
+    return (a + b # example 3: missing closing parenthesis
+
+result = calculate_sum(3, 4)
+                            </pre>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.12">
+                    <p class="exercise-description">[2.12] Write a program (one or more lines of code) in Python that crashes once it is running because it has a runtime error. 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.12)">Show Solution</button>
+                    <div id="solution2.12" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <pre class="brush: python">
+print(1 / 0)  # example 1: division by zero error
+
+x = "hello"
+y = 5
+
+result = x + y  # example 2: attempting to concatenate two different types; a string and an integer
+                            </pre>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="exercise-container" id="exercise2.13">
+                    <p class="exercise-description">[2.13]  Try to run each of the following lines of code in Python (copy-paste them as they are given below). On the right, write the type of the error as well as what the error means, namely what is the issue with the code given? 
+
+                        <table>
+                            <tr>
+                                <td class="smaller-column"><code> Print("I am a student") </code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print("Hello World"</code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print "Hello World"</code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print("Hello World)</code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print(Hello World)</code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><pre class="brush: python">        print("hi!!!")</pre></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>p r i n t ( "Try me" )</code></td>
+                                <td class="larger-column"></td>
+                            </tr>
+                        </table>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.13)">Show Solution</button>
+                    <div id="solution2.13" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <br>
+                            <table>
+                            <tr>
+                                <td class="smaller-column"><code> Print("I am a student") </code></td>
+                                <td class="larger-column">NameError/Runtime: name 'Print' is not defined (change P (capital) → p (lowercase))</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print("Hello World"</code></td>
+                                <td class="larger-column">SyntaxError: '(' was never closed</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print "Hello World"</code></td>
+                                <td class="larger-column">SyntaxError: Missing parentheses in call to 'print'. Put parentheses around the string “Hello World”</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print("Hello World)</code></td>
+                                <td class="larger-column">Syntax Error: unterminated string literal. Add a “ after World to close the string</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>print(Hello World)</code></td>
+                                <td class="larger-column">Syntax Error: Need quotation marks around the string</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><pre class="brush: python">        print("hi!!!")</pre></td>
+                                <td class="larger-column">IndentationError (Runtime Error): Delete the extra indentation</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>p r i n t ( "Try me" )</code></td>
+                                <td class="larger-column">SyntaxError: remove the spaces between the print</td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise2.14">
+                   
+                    <p class="exercise-description">[2.14] We’ve seen that n = 42 is legal. What about 42 = n?
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(2.14)">Show Solution</button>
+                    <div id="solution2.14" class="solution" style="display: none;">
+                        <p>That is illegal and it will throw a syntax error. Variable assignment must always happen with the variable on the left and the value on the right (being assigned to the variable on the left).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+<!-- ======================================= -->
+
+                
+            </div>
+        </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>Function Calls</h4>
+                    <ul>
+                      <li><a href="#exercise4.1">Exercise 4.1</a></li>
+                      <li><a href="#exercise4.2">Exercise 4.2</a></li>
+                      <li><a href="#exercise4.3">Exercise 4.3</a></li>
+                      <li><a href="#exercise4.4">Exercise 4.4</a></li>
+                      <li><a href="#exercise4.5">Exercise 4.5</a></li>
+                      <li><a href="#exercise4.6">Exercise 4.6</a></li>
+                      <li><a href="#exercise4.7">Exercise 4.7</a></li>
+                      <li><a href="#exercise4.8">Exercise 4.8</a></li>
+                      <li><a href="#exercise4.9">Exercise 4.9</a></li>
+                      <li><a href="#exercise410">Exercise 4.10</a></li>
+                      <li><a href="#exercise4.11">Exercise 4.11</a></li>
+                      <li><a href="#exercise4.12">Exercise 4.12</a></li>
+                      <li><a href="#exercise4.13">Exercise 4.13</a></li>
+                      <li><a href="#exercise4.14">Exercise 4.14</a></li>
+                      <li><a href="#exercise4.15">Exercise 4.15</a></li>
+                      <li><a href="#exercise4.16">Exercise 4.16</a></li>
+                      <li><a href="#exercise4.17">Exercise 4.17</a></li>
+                      <li><a href="#exercise4.18">Exercise 4.18</a></li>
+                      <li><a href="#exercise4.19">Exercise 4.19</a></li>
+                      <li><a href="#exercise420">Exercise 4.20</a></li>
+                      <li><a href="#exercise4.21">Exercise 4.21</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- UNIT 1=================================================================================== -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Function Calls</h2>
+
+                <div class="exercise-container" id="exercise4.1">
+                    <p class="exercise-description">[4.1] What does print mean? What does the statement <code>print(3)</code> do? What does it return?</p>
+                    <button class="show-solution-btn" onclick="showSolution(4.1)">Show Solution</button>
+                    <div id="solution4.1" class="solution" style="display: none;">
+                        <p>Solution: print is the name of the function used to display information in the console/shell in Python. The statement <code>print(3)</code> will display the number 3 in the shell. The return value of the print function is None.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.2">
+                    <p class="exercise-description">[4.2] What is the output from <code>print(1/3)</code>? Why do we get this output?</p>
+                    <button class="show-solution-btn" onclick="showSolution(4.2)">Show Solution</button>
+                    <div id="solution4.2" class="solution" style="display: none;">
+                        <p>Solution: 
+                            As we have a normal division (/) not an integer divsion (//), the output of the division is 0.3333333333333333 and this will be printed on the console/shell of Python.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.3">
+                    <p class="exercise-description">[4.3] What do each of these functions evaluate to? What does it return (write None if nothing)? Does it have any side effects (write No if not)?
+                        <table>
+                            <tr>
+                                <td class="smaller-column">Function call:</td>
+                                <td class="smaller-column">Returns:</td>
+                                <td class="smaller-column">Side effects:</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>abs(-2)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>pow(2, 3)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>round(12.4567, 2)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>int("4")</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>float(3)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>str(98.9)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>bool(0)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>type(4 + 3.0)</code></td>
+                                <td class="smaller-column"></td>
+                                <td class="smaller-column"></td>
+                            </tr>
+                        </table>
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.3)">Show Solution</button>
+                    <div id="solution4.3" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <table>
+                            <tr>
+                                <td class="smaller-column">Function call:</td>
+                                <td class="smaller-column">Returns:</td>
+                                <td class="smaller-column">Side effects:</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>abs(-2)</code></td>
+                                <td class="smaller-column">2</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>pow(2, 3)</code></td>
+                                <td class="smaller-column">8</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>round(12.4567, 2)</code></td>
+                                <td class="smaller-column">12.46</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>int("4")</code></td>
+                                <td class="smaller-column">4</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+
+                            <tr>
+                                <td class="smaller-column"><code>float(3)</code></td>
+                                <td class="smaller-column">3.0</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>str(98.9)</code></td>
+                                <td class="smaller-column">"98.9"</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>bool(0)</code></td>
+                                <td class="smaller-column">False</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+                            <tr>
+                                <td class="smaller-column"><code>type(4 + 3.0)</code></td>
+                                <td class="smaller-column">float</td>
+                                <td class="smaller-column">No side effect</td>
+                            </tr>
+                        </table>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.4">
+                   
+                    <p class="exercise-description">[4.4] What will happen when you execute the following code?
+                        <pre class="brush: python">
+num = input("Enter a number to be doubled:") 
+doubled_num = num * 2 
+print(doubled_num)
+                        </pre>
+</p>
+                    <button class="show-solution-btn" onclick="showSolution(4.4)">Show Solution</button>
+                    <div id="solution4.4" class="solution" style="display: none;">
+                        <p>Solution: The first line of code prompts the user to enter in a number that will be doubled. This number is saved as a string type in the <code>num</code> variable (the input function always returns a string type). This string will be doubled (or repeated twice) via <code>num * 2</code> and this new string will be saved in the variable <code>doubled_num</code>. The <code>doubled_num</code> string will then be printed to the console/shell in Python.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.5">
+                   
+                    <p class="exercise-description">[4.5] What is going to be printed once each of the following code blocks is executed?
+                    <pre class="brush: python">
+#code block 1
+a = -4
+b = 2
+c = abs(a)
+x = a * c
+print(x)
+
+#code block 2
+a = 3
+b = 2
+
+x = pow(a, b)
+print(x)
+
+x = pow(b, a)
+print(x)
+                    </pre>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.5)">Show Solution</button>
+                    <div id="solution4.5" class="solution" style="display: none;">
+                        <p>Solution:
+                            <br> code block 1 will print: -16
+                            <br> code block 2 will print: 
+                            <br>9
+                            <br>8
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.6">
+                    <p class="exercise-description">[4.6] What will the following evaluate to?
+
+                        <ul>
+                            <li> <code>round(pow(abs(-35), 1/2), 2)</code> </li>
+                            <li> <code>pow(round(34/4,0), abs(3))</code> </li>
+                        </ul>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.6)">Show Solution</button>
+                    <div id="solution4.6" class="solution" style="display: none;">
+                        <p>Solution: 
+                        
+                        <ul>
+                            <li> <code>round(pow(abs(-35), 1/2), 2) --> 5.92</code> </li>
+                            <li> <code>pow(round(34/4,0), abs(3)) --> 512.0</code> </li>
+                        </ul>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.7">
+                    <p class="exercise-description">[4.7] Trace through the following code. What are the values of a and b at the end, once all the code has executed? What is going to be printed at the end, once all the code has executed?
+                    <pre class="brush: python">
+a = 4
+b = 15
+
+a = b // a
+a = b / a
+b = b % 4
+print(a + b)
+                    </pre> 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.7)">Show Solution</button>
+                    <div id="solution4.7" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Values:
+a = 5.0
+b = 3
+
+Printed:
+8.0
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.8">
+                    <p class="exercise-description">[4.8] Consider this function definition
+                    <pre class="brush: python">
+def mystery(num):
+    return abs(num) + num
+                    </pre> 
+                    Imagine we ran mystery(-5).
+                    <ul>
+                        <li>Does this call have any argument(s)? If yes, list it/them.</li>
+                        <li>Does this call have any returned value(s)? If yes, list it/them.</li>
+                        <li>Does this call have any side effect(s)? If yes, list it/them.</li>
+                    </ul>
+
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.8)">Show Solution</button>
+                    <div id="solution4.8" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Argument: -5
+
+Returned Value: 0
+
+Side Effects: No
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.9">
+                    <p class="exercise-description">[4.9] Now, imagine we ran the <code>y = mystery(x)</code> where <code>type(x) == int </code>. Which of the expressions below are true?
+                    <ol>
+                        <li><code>y>0</code></li>
+                        <li><code>not (y < 0)</code></li>
+                        <li><code>x <= y</code></li>
+                        <li><code>y == 0</code></li>
+                        <li><code>type(y) == int</code></li>
+                        <li><code>type(y) == float</code></li>
+                    </ol>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.9)">Show Solution</button>
+                    <div id="solution4.9" class="solution" style="display: none;">
+                        <p>Solution: The following are true:
+                            <ol>
+                                <li><code>not (y < 0)</code></li>
+                                <li><code>x <= y</code></li>
+                                <li><code>type(y) == int</code></li>
+                            </ol>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise410">
+                    <p class="exercise-description">[4.10] Consider the following function:
+                    <pre class="brush: python">
+def hypotenuse(a, b, rightAngle):
+    if not rightAngle: 
+        print(“I can’t calculate the hypotenuse of a triangle without a right angle!”) 
+    else:
+        c = (a**2 + b**2)**(0.5) 
+        print(“The triangle’s hypotenuse is”, c)
+                    </pre> 
+
+                    If you call <code>hypotenuse(3, 4, True)</code>:
+                    <ul>
+                        <li>Does this call have any argument(s)? If yes, list it/them.</li>
+                        <li>Does this call have any returned value(s)? If yes, list it/them.</li>
+                        <li>Does this call have any side effect(s)? If yes, list it/them.</li>
+                    </ul>
+
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(410)">Show Solution</button>
+                    <div id="solution410" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Arguments: 3, 4, True
+
+Returned Value: None
+
+Side Effects: Prints out the following
+
+The triangle’s hypotenuse is 5
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.11">
+                    <p class="exercise-description">[4.11] Consider the following function:
+                    <pre class="brush: python">
+def funkyMath(x, y): 
+    newX = int(x) + 8 
+    newY = (y - 2) * 5 
+    return 12 + newY - newX 
+
+                    </pre> 
+
+                    If you call <code>funkyMath(3.8, 7)</code>:
+                    <ul>
+                        <li>Does this call have any argument(s)? If yes, list it/them.</li>
+                        <li>Does this call have any returned value(s)? If yes, list it/them.</li>
+                        <li>Does this call have any side effect(s)? If yes, list it/them.</li>
+                    </ul>
+
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.11)">Show Solution</button>
+                    <div id="solution4.11" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Arguments: 3.8, 7
+
+Returned Value: 26
+
+Side Effect: No  
+                        </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.12">
+                    <p class="exercise-description">[4.12] Answer the following questions regarding the block of code below:
+                        <ul>
+                            <li>Are there any global variables? If yes, what are they?</li>
+                            <li>Are there any local variables? If yes, what are they?</li>
+                            <li>Does the function call to <code>fun1</code> have any argument(s)? If yes, list it/them.</li>
+                            <li>Does the function call to <code>fun1</code>have any returned value(s)? If yes, list it/them.</li>
+                        </ul>
+                    <pre class="brush: python">
+x = 3
+z = 5
+
+def fun1(x, y):
+    w = x + y
+    print("x:", x)
+    return w
+
+fun1(1, z)
+                    </pre> 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.12)">Show Solution</button>
+                    <div id="solution4.12" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Global Variables: x, z
+
+Local Variables: x, y, w
+
+Arguments for fun1 function call: 1, 5
+
+Return value for fun1 function call: 6
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.13">
+                    <p class="exercise-description">[4.13]  Identify the number of arguments and their type, function name, side effects and return value type of the function below:
+                    <pre class="brush: python">
+import random
+import math
+
+def magicFunction(x, y, s):
+    a = random.randint(1, 5)
+    b = math.ceil(x/y)
+    print(s - a)
+    print(b)
+
+magicFunction(5, 3, 10)
+                    </pre> 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.13)">Show Solution</button>
+                    <div id="solution4.13" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+Number of Arguments: 3
+
+Type of Arguments: Three ints
+
+Function Name: magicFunction
+
+Side Effects: The first line printed is the result of 10 minus a random number 1 to 5. The second line printed is 2.
+
+Return value type: None
+
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.14">
+                    <p class="exercise-description">[4.14] Given two variables x and y below, write code to calculate their sum, absolute value of their difference, x raised to the power of y and round the result of x divided by y:
+                    <pre class="brush: python">
+x = 5
+y = 2
+
+#Your code below
+sum = 
+diff = 
+power = 
+roundDiv = 
+
+                    </pre> 
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.14)">Show Solution</button>
+                    <div id="solution4.14" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+sum = x + y
+diff = abs(x - y)
+power = pow(x, y)
+roundDiv = round(x/y)
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="exercise-container" id="exercise4.15">
+                    <p class="exercise-description">[4.15] A student wants to calculate the volume of any sphere. Help this student by writing code that asks the user to enter in a radius value via the <code>input</code> function in Python and then compute the volume using the volume formula (V = 4/3 * r * 3):
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.15)">Show Solution</button>
+                    <div id="solution4.15" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+radius = int(input("Enter a radius: "))
+volume = (4/3)*(math.pi)*(pow(radius, 3))
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.16">
+                    <p class="exercise-description">[4.16] Write a line of code that generates a random number between 1 and 10 and then raises that number to power 2 and prints the result:
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.16)">Show Solution</button>
+                    <div id="solution4.16" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+print(random.randint(1,10), 2)
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.17">
+                    <p class="exercise-description">[4.17] Write a line of code that takes a variable x which holds a number as a string, turns the number into a float, and then divides the number by 13:
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.17)">Show Solution</button>
+                    <div id="solution4.17" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+y = (float(x)/13)
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.18">
+                    <p class="exercise-description">[4.18] Write a line of code that takes a variable x that stores an integer, and calculates the log of that number with base 10. It then multiples the result by pi and prints the result:
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.18)">Show Solution</button>
+                    <div id="solution4.18" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+print(math.log(x, 10) * math.pi)
+
+
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.19">
+                    <p class="exercise-description">[4.19] Write some code that asks the user for two numbers (using the <code>input</code> function twice),  multiplies the given numbers together, and then prints the result. For example, if the user enters 2 and then 4, your program should print the following text: <code>“The product of 2 and 4 is 8”</code>.
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.19)">Show Solution</button>
+                    <div id="solution4.19" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+x = int(input("First Number : "))
+y = int(input("Second Number : "))
+print(x * y)
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise420">
+                    <p class="exercise-description">[4.20] Write some code that asks the user for two numbers (using the <code>input</code> function twice). Then, it prints the first number raised to the power of the second number. A sample run of the program should look like this:
+
+                    <pre class="brush: python">
+Enter a base: 1.2
+Enter an exponent: 3
+1.2 to the power of 3 is: 1.72799999999998
+                    </pre>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(420)">Show Solution</button>
+                    <div id="solution420" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+base = float(input("Enter a base: "))
+exponent = int(input("Enter an exponent: "))
+print(base, "to the power of", exponent, "is:", pow(base, exponent))
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise4.21">
+                    <p class="exercise-description">[4.21] A 15110 student is trying to determine their grade for the class. To do that, they need to calculate their approximate score for their programming assignment. They know that:
+                        <ul>
+                            <li> for their 999 lines of code, between 5-15% of them will have syntax errors, and between 2-5% of the lines will have logical errors (they ask you generate this randomly)</li>
+                            <li>for every buggy line, they lose 0.1 point and for every infinite loop line they lose 0.5 points. Since lines can only be integers, round the number of lines down to the nearest integer.</li>
+                        </ul>
+
+                    Given that their homework assignment is out of 100 points, and using some libraries you have learnt about in class, help this student calculate their homework score.
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(4.21)">Show Solution</button>
+                    <div id="solution4.21" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <pre class="brush: python">
+import random
+
+syntaxErrors = random.randint(5, 15)/100
+syntaxErrorLines = int(999 * syntaxErrors)
+
+logicalErrors = random.randint(2, 5)/100
+logicalErrorLines = int(999 * logicalErrors)
+
+points = 100 - (0.1 * syntaxErrorLines) - (0.5 * logicalErrorLines)
+                         </pre>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================= -->
+   
+            </div>
+
+        </div>
+<script src="script.js"></script>
+    
+</body>
+</html>

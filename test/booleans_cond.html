@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                 <li>
+                    <h4>Booleans, Conditionals, Errors</h4>
+                    <ul>
+                        <li><a href="#exercise6.1">Exercise 6.1</a></li>
+                        <li><a href="#exercise6.2">Exercise 6.2</a></li>
+                        <li><a href="#exercise6.3">Exercise 6.3</a></li>
+                        <li><a href="#exercise6.4">Exercise 6.4</a></li>
+                        <li><a href="#exercise6.5">Exercise 6.5</a></li>
+                        <li><a href="#exercise6.6">Exercise 6.6</a></li>
+                        <li><a href="#exercise6.7">Exercise 6.7</a></li>
+                        <li><a href="#exercise6.8">Exercise 6.8</a></li>
+                        <li><a href="#exercise6.9">Exercise 6.9</a></li>
+                        <li><a href="#exercise610">Exercise 6.10</a></li>
+                        <li><a href="#exercise6.11">Exercise 6.11</a></li>
+                        <li><a href="#exercise6.12">Exercise 6.12</a></li>
+                        <li><a href="#exercise6.13">Exercise 6.13</a></li>
+                        <li><a href="#exercise6.14">Exercise 6.14</a></li>
+                        <li><a href="#exercise6.15">Exercise 6.15</a></li>
+                        <li><a href="#exercise6.16">Exercise 6.16</a></li>
+                        <li><a href="#exercise6.17">Exercise 6.17</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- UNIT 1=================================================================================== -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Booleans, Conditionals, and Errors</h2>
+
+<!-- Exercise 6.1 -->
+<div class="exercise-container" id="exercise6.1">
+    <p class="exercise-description">[6.1] What is the output of the following code?</p>
+    <pre>
+        <code>
+a = 3 
+b = (a != 3) 
+print(b)
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.1)">Show Solution</button>
+    <div id="solution6.1" class="solution" style="display: none;">
+        <p><strong>Output:</strong></p>
+        <pre>
+            <code>
+False
+            </code>
+        </pre>
+        <p><strong>Explanation:</strong></p>
+        <p><code>a != 3</code> is <code>False</code>, hence <code>b</code> will be <code>False</code>.</p>
+    </div>
+</div>
+
+
+<!-- Exercise 6.2 -->
+<div class="exercise-container" id="exercise6.2">
+    <p class="exercise-description">[6.2] What will the following expression evaluate to:</p>
+    <pre>
+        <code>
+not(True and True)
+
+True or False
+
+not(False and True)
+
+False and False
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.2)">Show Solution</button>
+    <div id="solution6.2" class="solution" style="display: none;">
+        <p><strong>Answers:</strong></p>
+        <pre>
+            <code>
+not(True and True) --> False
+
+True or False --> True
+
+not(False and True) --> True
+
+False and False --> False
+            </code>
+        </pre>
+    </div>
+</div>
+
+<!-- Exercise 6.3 -->
+<div class="exercise-container" id="exercise6.3">
+    <p class="exercise-description">[6.3] Consider the expression <code>not a or b</code>. 
+        <br>
+        Which of the following makes the expression <code>False</code>? (There could be more than one!)</p>
+    <pre>
+        <code>
+A. a False, b False
+B. a False, b True
+C. a True, b False
+D. a True, b True
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.3)">Show Solution</button>
+    <div id="solution6.3" class="solution" style="display: none;">
+        <p><strong>Answers:</strong></p>
+        <pre>
+            <code>
+A, C
+            </code>
+        </pre>
+    </div>
+</div>
+
+<!-- Exercise 6.4 -->
+<div class="exercise-container" id="exercise6.4">
+    <p class="exercise-description">[6.4] What will the following expression evaluate to if <code>x = 10</code>? If it evaluates to an error you can write “Error”.</p>
+    <pre>
+        <code>
+(x >= 2) or (“hello” == “HELLO”)
+
+x < 25 and x > 15
+
+not (x > 5 and x <= 10)
+
+15 + "-110" == "15-110"
+
+(x > 7) or ((x**3 > 50) and (x == 20))
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.4)">Show Solution</button>
+    <div id="solution6.4" class="solution" style="display: none;">
+        <p><strong>Answers:</strong></p>
+        <pre>
+            <code>
+
+(x >= 2) or (“hello” == “HELLO”) --> True
+
+x < 25 and x > 15 --> False
+
+not (x > 5 and x <= 10) --> False
+
+15 + "-110" == "15-110" --> “Error” (Specifically this would be a TypeError (runtime))
+
+(x > 7) or ((x**3 > 50) and (x == 20)) --> True
+
+            </code>
+        </pre>
+    </div>
+</div>
+
+<!-- Exercise 6.5 -->
+<div class="exercise-container" id="exercise6.5">
+    <p class="exercise-description">[6.5] For each of the following expressions, fill in the blank ______ with an appropriate Boolean comparator so that the expression evaluates to <code>True</code></p>
+    <pre>
+        <code>
+3 ______ 4
+
+10 ____ 5
+
+“Jack” ____ “jill”
+
+42 ______ “42”
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.5)">Show Solution</button>
+    <div id="solution6.5" class="solution" style="display: none;">
+        <p><strong>Answers:</strong></p>
+        <pre>
+            <code>
+3 < 4
+
+10 > 5
+
+“Jack” != “jill”
+
+42 != “42”
+            </code>
+        </pre>
+    </div>
+</div>
+
+
+<!-- Exercise 6.6 -->
+<div class="exercise-container" id="exercise6.6">
+    <p class="exercise-description">[6.6] Given the code below, answer these questions:</p>
+    <pre>
+        <code>
+x = 15 
+if x > 10: 
+    print("A") 
+elif x == 15:
+    print("B")
+else: 
+    print("C")
+        </code>
+
+1. What will the code print?
+2. Can we print both A, B and C at the same time?
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.6)">Show Solution</button>
+    <div id="solution6.6" class="solution" style="display: none;">
+        <p><strong>Answers:</strong></p>
+<br>
+1. A
+<br>
+2. No, the structure of if-elif-else is mutually exclusive. The elif conditional will only be evaluated if the if conditional is false, and similarly, the else conditional will only be evaluated if the elif statement and the if conditional evaluate to false.
+    </div>
+</div>
+
+
+<!-- Exercise 6.9 -->
+<div class="exercise-container" id="exercise6.7">
+    <p class="exercise-description">[6.7] What is the value of <code>x</code> after the following code runs?</p>
+    <pre>
+        <code>
+x = 5 
+if x > 2: 
+    x = -3 
+if x > 1: 
+    x = 1 
+else: 
+    x = 3
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.7)">Show Solution</button>
+    <div id="solution6.7" class="solution" style="display: none;">
+        <p><strong>Answer:</strong></p>
+        <pre>
+            <code>
+3
+            </code>
+        </pre>
+
+        The code execution unfolds as follows:
+    <ol>
+        <li><code>x</code> is initially set to <strong>5</strong>.</li>
+        <li>The first <code>if</code> statement checks if <code>x</code> is greater than <strong>2</strong>, which is true. Therefore, <code>x</code> is updated to <strong>-3</strong>.</li>
+        <li>The second <code>if</code> statement checks if <code>x</code> is greater than <strong>1</strong>, which is true (<strong>-3 &gt; 1</strong> is true). Therefore, <code>x</code> is updated to <strong>1</strong>.</li>
+        <li>The <code>else</code> statement is not executed because the previous <code>if</code> condition was true.</li>
+    </ol>
+    
+    
+
+    </div>
+</div>
+
+<!-- Exercise 6.10 -->
+<div class="exercise-container" id="exercise6.8">
+    <p class="exercise-description">[6.8] What is the value of <code>x</code> after the following code runs?</p>
+    <pre>
+        <code>
+x = 5 
+if x > 0: 
+    print("positive") 
+elif x == 5: 
+    print("equal") 
+elif x % 5 == 0: 
+    print("divisible by 5") 
+else: 
+    print("other")
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.8)">Show Solution</button>
+    <div id="solution6.8" class="solution" style="display: none;">
+        <p><strong>Answer:</strong></p>
+        <pre>
+            <code>
+5 (note here the value of x never changes)
+            </code>
+        </pre>
+
+
+        The code execution unfolds as follows:
+
+    <ol>
+        <li><code>x</code> is initially set to <strong>5</strong>.</li>
+        <li>The first <code>if</code> statement checks if <code>x</code> is greater than <strong>0</strong>, which is true. Therefore, "positive" is printed, and the subsequent <code>elif</code> and <code>else</code> statements are skipped (even though the condition of the two elifs are true, we never check for them after one branch evaluates to true, we skip.</li>
+    </ol>
+    </div>
+</div>
+
+<!-- Exercise 6.9 -->
+<div class="exercise-container" id="exercise6.9">
+    <p class="exercise-description">[6.9] What will the following return given the code definition below:</p>
+    <pre>
+        <code>
+def pos_neg(a, b, negative):
+    if negative:
+        return a < 0 and b < 0
+    else:
+        return (a < 0 and b > 0) or (a > 0 and b < 0)
+        </code>
+    </pre>
+    <table class="exercise-table">
+        <tr>
+            <th>Function Call</th>
+            <th>Returned Value</th>
+        </tr>
+        <tr>
+            <td><code>pos_neg(1, -1, False)</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>pos_neg(-1, 1, False)</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>pos_neg(-4, -5, True)</code></td>
+            <td></td>
+        </tr>
+    </table>
+    <button class="show-solution-btn" onclick="showSolution(6.9)">Show Solution</button>
+    <div id="solution6.9" class="solution" style="display: none;">
+        <table class="exercise-table">
+        <tr>
+            <th>Function Call</th>
+            <th>Returned Value</th>
+        </tr>
+        <tr>
+            <td><code>pos_neg(1, -1, False)</code></td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td><code>pos_neg(-1, 1, False)</code></td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td><code>pos_neg(-4, -5, True)</code></td>
+            <td>True</td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<!-- Exercise 6.10 -->
+<div class="exercise-container" id="exercise610">
+    <p class="exercise-description">[6.10] What values of <code>x</code> will allow the code to print “A”? What about to print “B”?</p>
+    <pre>
+        <code>
+if -10 < x and x < 10: 
+    print("A") 
+elif x <= -10 or x >= 10: 
+    print("B")
+        </code>
+    </pre>
+    <table class="exercise-table">
+        <tr>
+            <th>Printed Message</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>"A"</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>"B"</td>
+            <td></td>
+        </tr>
+    </table>
+    <button class="show-solution-btn" onclick="showSolution(610)">Show Solution</button>
+    <div id="solution610" class="solution" style="display: none;">
+        <p><strong>Explanation:</strong></p>
+         <table class="exercise-table">
+        <tr>
+            <th>Printed Message</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>"A"</td>
+            <td>if x is between -9 and 9 (inclusive) i.e. 6</td>
+        </tr>
+        <tr>
+            <td>"B"</td>
+            <td>if x is less than equal to 10 or x is greater than or equal to 10 (i.e. -10, 10, -11, 11, etc)</td>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<!-- Exercise 6.11 -->
+<div class="exercise-container" id="exercise6.11">
+    <p class="exercise-description">[6.11] Do the following two snippets of code do exactly the same thing? Assume that temperature already refers to a number. Explain your answer in a few sentences.</p>
+
+<pre><code>
+#code 1
+if temperature > 0: 
+    print('warm') 
+elif temperature == 0: 
+    print('zero') 
+else: 
+    print('cold')
+
+#code 2
+if temperature > 0: 
+    print('warm') 
+
+elif temperature == 0: 
+    print('zero') 
+
+print('cold')</code>
+</pre>
+    <button class="show-solution-btn" onclick="showSolution(6.11)">Show Solution</button>
+    <div id="solution6.11" class="solution" style="display: none;">
+        <p><strong>Explanation:</strong></p>
+
+No, the second code will always print ‘cold’ regardless of the temperature, however the first block of code will only print ‘cold’ when temperature is under 0.
+
+    </div>
+</div>
+
+<!-- Exercise 6.12 -->
+<div class="exercise-container" id="exercise6.12">
+    <p class="exercise-description">[6.12] The Problem: In basketball, three plays score points: a three-point shot, a two-point shot, and a one-point free throw. You just watched a basketball game between the Apples and Bananas, and recorded the number of successful three-point, two-point, and one point plays for each team. If the game was won by the Apples we want to print A, if the game was won by the Bananas we want to print B, and if the game was a tie we want to print T.</p>
+    <pre>
+        <code>
+apple_three = int(input("Enter the # of three points for apple:"))
+apple_two = int(input("Enter the # of two points for apple:"))
+apple_one = int(input("Enter the # of one points for apple:"))
+
+banana_three = int(input("Enter the # of three points for banana:"))
+banana_two = int(input("Enter the # of two points for banana:"))
+banana_one = int(input("Enter the # of one points for banana:"))
+
+apple_total = apple_three * 3 + apple_two * 2 + apple_one
+banana_total = banana_three * 3 + banana_two * 2 + banana_one
+
+        </code>
+    </pre>
+    <button class="show-solution-btn" onclick="showSolution(6.12)">Show Solution</button>
+    <div id="solution6.12" class="solution" style="display: none;">
+        <p><strong>Explanation:</strong></p>
+        <p><pre>
+            <code>
+if apple_total > banana_total:
+    print("A")
+elif banana_total > apple_total:
+    print("B")
+else:
+    print("T")
+            </code>
+        </pre></p>
+    </div>
+</div>
+
+<!-- Exercise 6.13 -->
+<div class="exercise-container" id="exercise6.13">
+    <p class="exercise-description">[6.13] Write the function <code>sleep_in(weekday, vacation)</code>: where the parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in. For example:</p>
+
+<pre><code>
+sleep_in(False, False) → True
+sleep_in(True, False) → False
+sleep_in(False, True) → True
+</code></pre>
+
+    <button class="show-solution-btn" onclick="showSolution(6.13)">Show Solution</button>
+    <div id="solution6.13" class="solution" style="display: none;">
+        <p><strong>Explanation:</strong></p>
+
+    <pre>
+        <code>
+def sleep_in(weekday, vacation):
+    if weekday == False or vacation == True:
+        return True
+    return False
+        </code>
+    </pre>
+
+    </div>
+</div>
+
+<!-- Exercise 6.14 -->
+<div class="exercise-container" id="exercise6.14">
+    <p class="exercise-description">[6.14] Write the function <code>monkey_trouble(a_smile, b_smile)</code>: We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.</p>
+
+            <p><strong>For example:</strong></p>
+        <pre>
+            <code>
+monkey_trouble(True, True) → True
+monkey_trouble(False, False) → True
+monkey_trouble(True, False) → False
+            </code>
+        </pre>
+    
+    <button class="show-solution-btn" onclick="showSolution(6.14)">Show Solution</button>
+    <div id="solution6.14" class="solution" style="display: none;">
+
+        <pre>
+        <code>
+def monkey_trouble(a_smile, b_smile):
+    if a_smile == b_smile:
+        return True
+    return False
+        </code>
+    </pre>
+
+    </div>
+</div>
+
+<!-- Exercise 6.15 -->
+<div class="exercise-container" id="exercise6.15">
+    <p class="exercise-description">[6.15] Write the function <code>sum_double(a, b)</code>: Given two int values, return their sum. Unless the two values are the same, then return double their sum.</p>
+
+    <p><strong>For example:</strong></p>
+        <pre>
+            <code>
+sum_double(1, 2) → 3
+sum_double(3, 2) → 5
+sum_double(2, 2) → 8
+            </code>
+        </pre>
+    
+    <button class="show-solution-btn" onclick="showSolution(6.15)">Show Solution</button>
+    <div id="solution6.15" class="solution" style="display: none;">
+
+        <pre>
+        <code>
+def sum_double(a, b):
+    if a == b:
+        return (a + b) * 2
+    return a + b
+        </code>
+    </pre>
+        
+    </div>
+</div>
+
+<!-- Exercise 6.16 -->
+<div class="exercise-container" id="exercise6.16">
+    <p class="exercise-description">[6.16] Write the function <code>makes10(a, b)</code>: Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.</p>
+
+    <p><strong>Example:</strong></p>
+        <pre>
+            <code>
+makes10(9, 10) → True
+makes10(9, 9) → False
+makes10(1, 9) → True
+            </code>
+        </pre>
+    
+    <button class="show-solution-btn" onclick="showSolution(6.16)">Show Solution</button>
+    <div id="solution6.16" class="solution" style="display: none;">
+
+        <pre>
+        <code>
+def makes10(a, b):
+    if a == 10 or b == 10 or a + b == 10:
+        return True
+    return False
+        </code>
+    </pre>
+        
+    </div>
+</div>
+
+<!-- Exercise 6.17 -->
+<div class="exercise-container" id="exercise6.17">
+    <p class="exercise-description">[6.17] Write the function <code>near_hundred(n)</code>: Given an int n, return True if it is within 10 of 100 or 200. Note: <code>abs(num)</code> computes the absolute value of a number.</p>
+
+    <p><strong>Example:</strong></p>
+        <pre>
+            <code>
+near_hundred(93) → True
+near_hundred(90) → True
+near_hundred(89) → False
+            </code>
+        </pre>
+
+    <button class="show-solution-btn" onclick="showSolution(6.17)">Show Solution</button>
+    <div id="solution6.17" class="solution" style="display: none;">
+
+            <pre>
+        <code>
+def near_hundred(n):
+    if abs(n - 100) <= 10 or abs(n - 200) <= 10:
+        return True
+    return False
+        </code>
+    </pre>
+        
+    </div>
+</div>
+
+</div>
+
+                
+            </div>
+
+        </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

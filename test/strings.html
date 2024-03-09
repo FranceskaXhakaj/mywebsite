@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>String indexing, slicing, looping</h4>
+                    <ul>
+                        <li><a href="#exercise10.1">Exercise 10.1</a></li>
+                        <li><a href="#exercise10.2">Exercise 10.2</a></li>
+                        <li><a href="#exercise10.3">Exercise 10.3</a></li>
+                        <li><a href="#exercise10.4">Exercise 10.4</a></li>
+                        <li><a href="#exercise10.5">Exercise 10.5</a></li>
+                        <li><a href="#exercise10.6">Exercise 10.6</a></li>
+                        <li><a href="#exercise10.7">Exercise 10.7</a></li>
+                        <li><a href="#exercise10.8">Exercise 10.8</a></li>
+                        <li><a href="#exercise10.9">Exercise 10.9</a></li>
+                        <li><a href="#exercise1010">Exercise 10.10</a></li>
+                        <li><a href="#exercise10.11">Exercise 10.11</a></li>
+                        <li><a href="#exercise10.12">Exercise 10.12</a></li>
+                        <li><a href="#exercise10.13">Exercise 10.13</a></li>
+                        <li><a href="#exercise10.14">Exercise 10.14</a></li>
+                        <li><a href="#exercise10.15">Exercise 10.15</a></li>
+                        <li><a href="#exercise10.16">Exercise 10.16</a></li>
+                        <li><a href="#exercise10.17">Exercise 10.17</a></li>
+                        <li><a href="#exercise10.18">Exercise 10.18</a></li>
+                        <li><a href="#exercise10.19">Exercise 10.19</a></li>
+                        <li><a href="#exercise1020">Exercise 10.20</a></li>
+                        <li><a href="#exercise10.21">Exercise 10.21</a></li>
+                        <li><a href="#exercise10.22">Exercise 10.22</a></li>
+                        <li><a href="#exercise10.23">Exercise 10.23</a></li>
+                        <li><a href="#exercise10.24">Exercise 10.24</a></li>
+                        <li><a href="#exercise10.25">Exercise 10.25</a></li>
+                        <li><a href="#exercise10.26">Exercise 10.26</a></li>
+                        <li><a href="#exercise10.27">Exercise 10.27</a></li>
+                        <li><a href="#exercise10.28">Exercise 10.28</a></li>
+                        <li><a href="#exercise10.29">Exercise 10.29</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- UNIT 1=================================================================================== -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>String indexing, slicing, looping</h2>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.1">
+    <p class="exercise-description">[10.1] You are given a string s. How would you:
+
+        <ol>
+            <li> Get the first letter of the string </li>
+            <li> Get the last letter of the string </li>
+            <li> Get the 5th letter of the string (assuming the string has at least 6 letters) </li>         
+        </ol>
+    </p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.1)">Show Solution</button>
+    <div id="solution10.1" class="solution" style="display: none;">
+        <p>
+<pre><code>
+1. first_letter = s[0]
+2. last_letter = s[len(s)-1]
+3. fifth_letter = s[4]
+</code></pre>
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.2">
+    <p class="exercise-description">[10.2] You are given the string <code>s = “My name is Mira”</code>.
+        <ol>
+            <li>Get the substring <code>“name”</code> and store it into a variable.</li>
+            <li>Get the substring <code>“Mira”</code> and store it into a variable.</li>
+            <li>Now create a new string that says <code>“name: Mira”</code>.</li>
+            <li>Now create a new string that says <code>“NAME: MIRA”</code>. </li>
+        </ol>
+    </p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.2)">Show Solution</button>
+    <div id="solution10.2" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+s = "My name is Mira"
+
+#1
+name = s[3:7]
+
+#2
+mira = s[11:]
+
+#3
+s1 = name + ": " + mira
+
+#4
+s2 = name.upper() + ": " + mira.upper()
+</code></pre>
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.3">
+    <p class="exercise-description">[10.3] Print a string that uses double quotation marks inside the string.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.3)">Show Solution</button>
+    <div id="solution10.3" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+print('This is a string with "double quotation marks" inside.')
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.4">
+    <p class="exercise-description">[10.4] Print a string that uses an apostrophe inside the string.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.4)">Show Solution</button>
+    <div id="solution10.4" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+print("This is a string with an apostrophe (') inside.")
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.5">
+    <p class="exercise-description">[10.5] Print the string “zing” by using slice notation on the string “bazinga” to specify the correct range of characters.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.5)">Show Solution</button>
+    <div id="solution10.5" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+s1 = "bazinga"
+s2 = s1[2:6]  # range from index 2 to index 6 (exclusive)
+print(s2)
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.6">
+    <p class="exercise-description">[10.6] Create two strings, concatenate them and then print the resulting string.</p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.6)">Show Solution</button>
+    <div id="solution10.6" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+string1 = "Hello "
+string2 = "World"
+result = string1 + string2
+print(result)
+</code></pre>
+
+
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.7">
+    <p class="exercise-description">[10.7] Create a string variable. Print the string and its length
+    </p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.7)">Show Solution</button>
+    <div id="solution10.7" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+myString= "Hello, World!"
+print("String:", myString)
+print("Length:", len(myString))
+</code></pre>
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.8">
+    <p class="exercise-description">[10.8] Create the string “aweawesomesome” from the given string <code>s=”awesome”</code>.
+    </p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.8)">Show Solution</button>
+    <div id="solution10.8" class="solution" style="display: none;">
+        <p>
+
+<pre><code class="language-python">
+s = "awesome"
+resulting_string = s[0:3] + s + s[3:]
+print(resulting_string)
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.9">
+    <p class="exercise-description">[10.9] What is the output of the following code?</p>
+
+<pre><code class="language-python">
+s = 'abcde'
+t = s[0] + s[5] + s[len(s) - 5]
+
+print(t)
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(10.9)">Show Solution</button>
+    <div id="solution10.9" class="solution" style="display: none;">
+        <p>Solution: <code> "aea" </code>.</p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise1010">
+    <p class="exercise-description">[10.10] Trace through this code. What is printed at the end, once all the code is executed?</p>
+
+<pre><code class="language-python">
+s1 = "I"
+s2 = s1
+print(s2 + " ")
+s1 = "LOCO"
+s3 = "DINGVE"
+print(s1[0:2] + s3[4:len(s3)] + " ")
+s4 = s3[0:4] + "!"
+print(s4)
+</code></pre>
+
+    <button class="show-solution-btn" onclick="showSolution(1010)">Show Solution</button>
+    <div id="solution1010" class="solution" style="display: none;">
+        <p>Solution:
+<pre><code>
+I 
+LOVE 
+DING!
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.11">
+    <p class="exercise-description">[10.11] Trace through this code below. What is printed at the end?</p>
+
+<pre><code class="language-python">
+s = "hi my name is"
+for i in range(1, len(s)):
+    s[i] = s[i-1]
+print(s[1:])
+</code></pre>
+
+    <button class="show-solution-btn" onclick="showSolution(10.11)">Show Solution</button>
+    <div id="solution10.11" class="solution" style="display: none;">
+        <p>The code will result in an error. Strings are immutable in Python, so you can't modify individual characters via <code>s[i] = s[i-1]</code>.</p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.12">
+    <p class="exercise-description">[10.12] Trace through the code below. What does the function call return? What is printed?</p>
+
+<pre><code class="language-python">
+def mysteryStringFun(s1, n):
+    new_s = ""
+    for i in range(n):
+        new_s += s1[i] * i
+    return new_s + s1[n-1:]
+
+some_s = "CMU is fun!"
+print("original: ", some_s)
+print("function returns: ", mysteryStringFun(some_s, 5))
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(10.12)">Show Solution</button>
+    <div id="solution10.12" class="solution" style="display: none;">
+        <p> Solution:
+<pre><code>
+original:  CMU is fun!
+function returns:  MUU   iiiiis fun!
+</code></pre>
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.13">
+    <p class="exercise-description">[10.13] Trace through the code below. What does it print?</p>
+<pre><code class="language-python">
+meal = "cheesecake, steak, fries"
+for i in range(0, len(meal), 2):
+    print(meal[i])
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(10.13)">Show Solution</button>
+    <div id="solution10.13" class="solution" style="display: none;">
+        <p>Solution:
+<pre><code class="language-python">
+c
+e
+s
+c
+k
+,
+s
+e
+k
+ 
+r
+e
+</code></pre>        
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.14">
+    <p class="exercise-description">[10.14] Modify the above code so that the printed string is reversed.
+    </p>
+    
+    <button class="show-solution-btn" onclick="showSolution(10.14)">Show Solution</button>
+    <div id="solution10.14" class="solution" style="display: none;">
+        <p>Solution:
+<pre><code class="language-python">
+meal = "cheesecake, steak, fries"
+for i in range(len(meal) - 2, -1, -2):
+    print(meal[i])
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.15">
+    <p class="exercise-description">[10.15] What will be the output of the following code?</p>
+
+<pre><code class="language-python">
+word = "python is awesome"
+index = 0
+while index < len(word):
+    print(word[index])
+    index += 2
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(10.15)">Show Solution</button>
+    <div id="solution10.15" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+p
+t
+o
+ 
+s
+a
+e
+o
+e
+</code></pre>
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.16">
+    <p class="exercise-description">[10.16] Given two strings, s1 and s2. Write a program to create a new string s3 by appending s2 in the middle of s1. If the string length is odd, the end of the string will have the extra letter. For example, if the length of s1 was 13, s3 would have 6 characters of s1, then s2, then 7 characters of s1.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.16)">Show Solution</button>
+    <div id="solution10.16" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">s1 = "Ault"
+s2 = "Kelly"
+
+# Find the midpoint of s1
+midpoint = len(s1) // 2
+
+# Insert s2 at the midpoint of s1
+s3 = s1[:midpoint] + s2 + s1[midpoint:]
+
+# Print the result
+print(s3)
+</code></pre>
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.17">
+    <p class="exercise-description">[10.17] Write a program that converts the following strings to lowercase: "Animals", "Badger", "Honey Bee", "Honey Badger".
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.17)">Show Solution</button>
+    <div id="solution10.17" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+s1 = "Animals"
+s2 = "Badger"
+s3 = "Honey Bee"
+s4 = "Honey Badger"
+
+print(s1.lower())
+print(s2.lower())
+print(s3.lower())
+print(s4.lower())
+</code></pre>
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.18">
+    <p class="exercise-description">[10.18] Repeat the above exercise, but convert each string to uppercase instead of lowercase.</p>
+    <button class="show-solution-btn" onclick="showSolution(10.18)">Show Solution</button>
+    <div id="solution10.18" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+s1 = "Animals"
+s2 = "Badger"
+s3 = "Honey Bee"
+s4 = "Honey Badger"
+
+print(s1.upper())
+print(s2.upper())
+print(s3.upper())
+print(s4.upper())
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.19">
+    <p class="exercise-description">[10.19] Write a program that removes whitespace from the following strings, then print out the strings with the whitespace removed:</p>
+
+<pre><code class="language-python">
+string1 = " FiletMignon" 
+string2 = "Brisket " 
+string3 = " Cheeseburger "
+</code></pre>
+    <button class="show-solution-btn" onclick="showSolution(10.19)">Show Solution</button>
+    <div id="solution10.19" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+string1 = " FiletMignon" 
+string2 = "Brisket " 
+string3 = " Cheeseburger "
+
+print(string1.strip())
+print(string2.strip())
+print(string3.strip())
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise1020">
+    <p class="exercise-description">[10.20] Write the function <code>checkTwos</code> that takes in a string as a parameter and returns <code>True</code> if the second character and the second to last character of the string are the same. You are guaranteed that the string will be at least 4 characters long.</p>
+
+
+    <button class="show-solution-btn" onclick="showSolution(1020)">Show Solution</button>
+    <div id="solution1020" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def checkTwos(s):
+    # compare the second character with the second-to-last character
+    return s[1] == s[len(s) - 2]
+
+# test the function
+print(checkTwos("abba"))  # Output: True
+print(checkTwos("programming"))  # Output: False
+</code></pre>
+
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.21">
+    <p class="exercise-description">[10.21] Given a string of numbers and characters, write the function <code>numsOnly</code> that returns all the numbers in the string in the same order they occur (in string form).</p>
+    <button class="show-solution-btn" onclick="showSolution(10.21)">Show Solution</button>
+    <div id="solution10.21" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def numsOnly(s):
+    result = ""
+    for char in s:
+        if char.isdigit():
+            result += char
+    return result
+
+print(numsOnly("o23yay9"))  # Output: "239"
+print(numsOnly("hello"))     # Output: ""
+print(numsOnly("I have 1 infinite loop, 5 assertion errors, 11 bugs and 0 motivation right now."))  # Output: "15110"
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.22">
+    <p class="exercise-description">[10.22] Write a function <code>matchString</code> that takes in two strings, one a sentence and a word, and returns how many times the word occurs in the sentence. Be careful of casing - we are counting the word regardless of if it is lowercase vs uppercase.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.22)">Show Solution</button>
+    <div id="solution10.22" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def matchString(sentence, word):
+    sentenceLower = sentence.lower()
+    wordLower = word.lower()
+    return sentenceLower.count(wordLower)
+
+print(matchString("Programming is fun, programming is creative", "programming")) # Output: 2 
+print(matchString("The cat with the red hat on the blue mat.", "the")) # Output: 3
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.23">
+    <p class="exercise-description">[10.23] Write the function <code>numFun</code> that takes a string as a paramter. The function should print the number of digits in the string and should return the average of these numbers.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.23)">Show Solution</button>
+    <div id="solution10.23" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def numFun(s):
+    total = 0
+    count = 0
+    
+    for i in range(len(s)):
+        if s[i].isdigit():
+            total += int(s[i])
+            count += 1
+    
+    avg = total / count
+    
+    print("Count:", count)
+    
+    return avg
+
+print(numFun("PYnative29@#8496"))   # Prints 6, Returns: 6.333333333333333
+print(numFun("jhfbjadj198ksjn98")) # Prints 5, Returns: 7.0
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.24">
+    <p class="exercise-description">[10.24] Write the function <code>splicedCheck</code> that takes in two indexes and a string as a paramter and returns the substring obtained by slicing the string starting from the first given index up to and including the character of the second index. Remember spaces also have associated indexes!
+    </p>
+
+
+    <button class="show-solution-btn" onclick="showSolution(10.24)">Show Solution</button>
+    <div id="solution10.24" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def splicedCheck(start, end, s):
+    return s[start:end+1]
+
+print(splicedCheck(0, 4, "HelloWorld!"))        # Output: "Hello"
+print(splicedCheck(3, 9, "I wish I could sleep")) # Output: "ish I c"
+</code></pre>
+
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.25">
+    <p class="exercise-description">[10.25] Write the function <code>count_characters</code> that takes input from the user and displays the number of characters in the given input.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.25)">Show Solution</button>
+    <div id="solution10.25" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def count_characters():
+    userInput = input("Enter a string: ")
+    numCharacters = len(userInput)
+    print("Number of characters:", numCharacters)
+    
+count_characters()
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.26">
+    <p class="exercise-description">[10.26] Write the function <code>not_string</code> that takes a string as a paramter and returns a new string where the string "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.26)">Show Solution</button>
+    <div id="solution10.26" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def not_string(s):
+    if s.startswith("not"):
+        return s
+    else:
+        return "not " + s
+
+# Test cases
+print(not_string('candy'))    # Output: 'not candy'
+print(not_string('x'))        # Output: 'not x'
+print(not_string('not bad'))  # Output: 'not bad'
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.27">
+    <p class="exercise-description">[10.27] Write the function <code>count_characters</code> that takes a string as a parameter and counts and prints all letters, digits, and special symbols from the given string.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.27)">Show Solution</button>
+    <div id="solution10.27" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def count_characters(s):
+    chars = 0
+    digits = 0
+    symbols = 0
+
+    for i in range(len(s)):
+        if s[i] in "abcdefghijklmnopqrstuvwxyz" or s[i] in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+            chars += 1
+        elif s[i].isdigit():
+            digits += 1
+        else:
+            symbols += 1
+
+    print("Chars =", chars)
+    print("Digits =", digits)
+    print("Symbols =", symbols)
+
+# Test the function
+str1 = "P@#yn26at^&i5ve"
+count_characters(str1)
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+
+<!-- //////// Exercise ////////////////////////////////// -->
+<div class="exercise-container" id="exercise10.28">
+    <p class="exercise-description">[10.28] Write a function <code>count_vowels</code> that takes a sentence as paramter and counts the number of vowels in the sentence (a, e, i, o, u). Count for both upper and lower case vowels.
+    </p>
+
+    <button class="show-solution-btn" onclick="showSolution(10.28)">Show Solution</button>
+    <div id="solution10.28" class="solution" style="display: none;">
+        <p>
+<pre><code class="language-python">
+def count_vowels(sentence):
+    vowels = "aeiou"
+    count = 0
+    
+    # Convert the sentence to lowercase to handle case-insensitivity
+    sentence = sentence.lower()
+    
+    # Iterate through each character in the sentence
+    for i in range(len(sentence)):
+        # Check if the character is a vowel
+        if sentence[i] in vowels:
+            count += 1
+    
+    return count
+
+# Test the function
+sentence = input("Enter a sentence: ")
+num_vowels = count_vowels(sentence)
+print("Number of vowels in the sentence:", num_vowels)
+</code></pre>
+
+        </p>
+    </div>
+</div>
+
+                
+               
+            </div>
+
+<!-- ======================================= -->
+
+                
+            </div>
+
+        </div>
+
+
+<script src="script.js"></script>
+    
+</body>
+</html>

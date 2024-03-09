@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>Data Representation</h4>
+                    <ul>
+                        <li><a href="#exercise3.1">Exercise 3.1</a></li>
+                        <li><a href="#exercise3.2">Exercise 3.2</a></li>
+                        <li><a href="#exercise3.3">Exercise 3.3</a></li>
+                        <li><a href="#exercise3.4">Exercise 3.4</a></li>
+                        <li><a href="#exercise3.5">Exercise 3.5</a></li>
+                        <li><a href="#exercise3.6">Exercise 3.6</a></li>
+                        <li><a href="#exercise3.7">Exercise 3.7</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Data Representation</h2>
+
+                <div class="exercise-container" id="exercise3.1">
+                   
+                    <p class="exercise-description">[3.1] You are given the following binary sequence: 00100000 01101100 01101111 01110110 01100101 00100000 01111001 01101111 01110101
+
+                    <ul>
+                        <li>If you were to interpret this sequence as 8 bit numbers, what would the numbers be?</li>
+                        <li>If you were to interpret this sequence as text (8 bits per character) what would the text say?</li>
+                        <li>If you were to interpret this sequence as RGB colors, how many pixels would there be represented? What color would each pixel be?</li>
+                    </ul>
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(3.1)">Show Solution</button>
+                    <div id="solution3.1" class="solution" style="display: none;">
+                        <p>Solution: <br>
+                        <ul>    
+                        <li>Interpreted as 8 bit numbers, they would be: 32 108 111 118 101 32 121 111 117
+                        </li>
+                        <li>Interpreted as text, they would be (note the space before the l): love you</li>
+                        <li>Interpreted as RGB colors, they would represent three pixels as follows: <br>
+
+                            Pixel1 = R32 G108 B111  <br>
+                            Pixel2 = R118 G101 B32  <br>
+                            Pixel3 = R121 G111 B117  <br>
+                        </li>
+                    </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.2">
+                    <p class="exercise-description">[3.2] One bit can represent 0 or 1. With two bits you have four possible combinations, 00, 01, 10, 11. How many different combinations can you make with four bits? What about eight bits?</p>
+                    <button class="show-solution-btn" onclick="showSolution(3.2)">Show Solution</button>
+                    <div id="solution3.2" class="solution" style="display: none;">
+                        <p>Solution: 
+                            There are 16 possible combinations you can make with four bits (2^4). There are 256 possible combinations you can make with eight bits (2^8).
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.3">
+                    <p class="exercise-description">[3.3] The largest number that one bit can represent is 1. With two bits, the largest number we can represent is 3 (binary 11). What is the largest number that we can represent with four bits? What about eight bits?</p>
+                    <button class="show-solution-btn" onclick="showSolution(3.3)">Show Solution</button>
+                    <div id="solution3.3" class="solution" style="display: none;">
+                        <p>Solution: The largest number we can represent with four bits is 15 (binary: 1111). The largest we can represent with eight bits is 255 (binary: 11111111).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.4">
+                    <p class="exercise-description">[3.4] A 15-110 student just finished playing their favorite video game and  got a high score of: fifteen thousand, one hundred and ten. How many digits would it take to represent this number in the decimal number system? What about in the binary number system?
+</p>
+                    <button class="show-solution-btn" onclick="showSolution(3.4)">Show Solution</button>
+                    <div id="solution3.4" class="solution" style="display: none;">
+                        <p>Solution: In the decimal number system, the number would take five digits. In the binary number system, it would take 14 bits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.5">
+                    <p class="exercise-description">[3.5] Convert each of the decimal numbers below to binary, and the binary numbers to decimal.
+                        <ul>
+                            <li> 8 </li>
+                            <li> 13 </li>
+                            <li> 145 </li>
+                        </ul>
+
+                        <ul>
+                            <li> 000111 </li>
+                            <li> 10011 </li>
+                            <li> 11000111 </li>
+                        </ul>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(3.5)">Show Solution</button>
+                    <div id="solution3.5" class="solution" style="display: none;">
+                        <p>Solution:
+                            <ul>
+                            <li> 8 -> 00001000</li>
+                            <li> 13 -> 00001101</li>
+                            <li> 145 -> 10010001</li>
+                        </ul>
+
+                        <ul>
+                            <li> 000111 -> 7</li>
+                            <li> 10011 -> 19</li>
+                            <li> 11000111 -> 199</li>
+                        </ul>
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.6">
+                    <p class="exercise-description">[3.6] Convert each of the characters/text below to binary, and the given binary sequences to characters/text.
+                        <ul>
+                            <li> a </li>
+                            <li> f </li>
+                            <li> HI </li>
+                        </ul>
+
+                        <ul>
+                            <li> 01110111 </li>
+                            <li> 01111010 </li>
+                            <li> 01101110 01101111 </li>
+                        </ul>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(3.6)">Show Solution</button>
+                    <div id="solution3.6" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <ul>
+                            <li> a -> 01100001</li>
+                            <li> f -> 01100110</li>
+                            <li> HI -> 01001000 01001001</li>
+                        </ul>
+
+                        <ul>
+                            <li> 01110111 -> w</li>
+                            <li> 01111010 -> z</li>
+                            <li> 01101110 01101111 -> no</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise3.7">
+                    <p class="exercise-description">[3.7] Convert each of the colors below to binary sequences and the given binary sequences to colors:
+                        <ul>
+                            <li> Red is (255,0,0) </li>
+                            <li> Yellow is (255,255,0) </li>
+                            <li> Magenta is (180, 61, 194) </li>
+                        </ul>
+
+                        <ul>
+                            <li> 00000000 11111111 00000000 </li>
+                            <li> 00011100 11001111 10101000 </li>
+                        </ul>
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(3.7)">Show Solution</button>
+                    <div id="solution3.7" class="solution" style="display: none;">
+                        <p>Solution: 
+                         
+                         <ul>
+                            <li> Red is (255,0,0) -> 11111111 00000000 00000000 </li>
+                            <li> Yellow is (255,255,0) -> 11111111 11111111 00000000</li>
+                            <li> Magenta is (180, 61, 194) -> 10110100 00111101 11000010</li>
+                        </ul>
+
+                        <ul>
+                            <li> 00000000 11111111 00000000 -> Green is (0, 255, 0)</li>
+                            <li> 00011100 11001111 10101000 -> Blue Green is (28, 207, 168)</li>
+                        </ul>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            </div>
+
+        </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

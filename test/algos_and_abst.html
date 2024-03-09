@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>Algorithms and Abstraction</h4>
+                    <ul>
+                        <li><a href="#exercise1.1">Exercise 1.1</a></li>
+                        <li><a href="#exercise1.3">Exercise 1.2</a></li>
+                        <li><a href="#exercise1.3">Exercise 1.3</a></li>
+                        <li><a href="#exercise1.4">Exercise 1.4</a></li>
+                        <li><a href="#exercise1.5">Exercise 1.5</a></li>
+                        <li><a href="#exercise1.6">Exercise 1.6</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- UNIT 1=================================================================================== -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Algorithms and Abstraction</h2>
+
+                <div class="exercise-container" id="exercise1.1">
+                    <p class="exercise-description">[1.1] What are algorithms? Can you think of some examples of them in your daily life?</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.1)">Show Solution</button>
+                    <div id="solution1.1" class="solution" style="display: none;">
+                        <p>Solution: Algorithms are procedures that specify the steps one needs to take to complete a task or solve a problem. They are used to standardize processes and communicate them between different people. Some examples of algorithms include recipes, tax codes, and sewing patterns.</p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.2">
+                    <p class="exercise-description">[1.2] What are the core parts of an algorithm? (Hint: there are 3!)</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.2)">Show Solution</button>
+                    <div id="solution1.2" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <ul>
+                                <li> Specify what is needed at the beginning (the input) </li>
+                                <li>Specify what is produced at the end (the output) </li>
+                                <li>Specify how to get from the beginning to the end (the steps)</li> 
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.3">
+                    <p class="exercise-description">[1.3] What is abstraction? Can you think of an example from the real world or the computing world of abstraction?</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.3)">Show Solution</button>
+                    <div id="solution1.3" class="solution" style="display: none;">
+                        <p>Solution: Abstraction is a technique used to make complex systems manageable by changing the amount of detail used to represent or interact with the system. Examples include credit cards, debit cards, cash, coins, venmo, etc. which are ways to abstract money.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.4">
+                    <p class="exercise-description">[1.4] Write a step-by-step algorithm at a low level of abstraction for making a cup of noodles. Assume you have access to all the ingredients i.e., chopsticks, cup noodles, hot water, the sauce packets, etc. Break down the process into clear, simple instructions that someone can follow if they have no prior knowledge of utensils and ingredients and what each item is, how to use them and in which order.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.4)">Show Solution</button>
+                    <div id="solution1.4" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <ol>
+                                <li> Define chopsticks as thin wooden sticks that come in a pair. </li>
+                                <li> Define a book as a small, heavy object made out of a wood material. </li> 
+                                <li> Define cup noodles as a small container made out of plastic that is filled with a dried doughy substance inside of it. </li>
+                                <li> Define hot water as a clear liquid that is hot and stored in a container. </li>
+                                <li> Define sauce packets as small plastic containers that contain flavored liquid. </li> 
+                                <li> First, with one hand  grasp the hot water container. Move it adjacent to the cup noodles but slightly above it. </li>
+                                <li> Tilt the container so that the hot water starts to fall within the cup noodles container. Stop tilting and return to normal position when the water reaches the top edge of the cup noodles.</li>
+                                <li>Move the hot water container and place it down in its original location. </li>
+                                <li>Use one hand to grasp a book and place it on top of the cup noodle container.</li>
+                                <li>Wait 5 minutes.</li>
+                                <li>Use one hand to grasp the book and return it to its original position.</li>
+                                <li>Use two hands to rip a corner off of the sauce packet. Orient the sauce packet such that the cut is facing the cup noodles container and is above it. </li>
+                                <li>Squeeze down on the packet.</li>
+                                <li>Move packet to the side and use one hand to pick up chopsticks.</li>
+                                <li>Move chopsticks into the cup noodles container and move them around for 30 seconds.</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.5">
+                    <p class="exercise-description">[1.5] Now write the same algorithm but at a medium level of abstraction. They have knowledge about each of the ingredients and how to use the given items but not how to make the noodles.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.5)">Show Solution</button>
+                    <div id="solution1.5" class="solution" style="display: none;">
+                        <p>Solution:
+                            <ol>
+                                <li> Pick up the hot water and pour some into cup noodles container until the water reached the edge of the container. </li>
+                                <li> Place a book on top of the cup noodles container and leave it there for five minutes. </li>
+                                <li> Remove the book and tear a corner of the sauce packet. </li>
+                                <li> Squeeze the sauce packet into the cup noodles. </li>
+                                <li> Use chopsticks to stir the noodle along with the sauce for 30 seconds. </li>
+
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exercise-container" id="exercise1.6">
+                    <p class="exercise-description">[1.6] Now write the same algorithm but at a high level of abstraction.</p>
+                    <button class="show-solution-btn" onclick="showSolution(1.6)">Show Solution</button>
+                    <div id="solution1.6" class="solution" style="display: none;">
+                        <p>Solution: 
+                            <ol>
+                                <li> Add some hot water to the noodles to cook them. </li>
+                                <li> Once cooked, add and mix sauce packets into the noodles. </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================================= -->
+
+                        
+            </div>
+
+        </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>

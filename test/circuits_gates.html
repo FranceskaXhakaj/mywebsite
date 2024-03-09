@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise Website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h3> Unit 1 </h3>
+            <ul id="exerciseMenu">
+                <li>
+                    <h4>Circuits and Gates</h4>
+                    <ul>
+                        <li><a href="#exercise7.1">Exercise 7.1</a></li>
+                        <li><a href="#exercise7.2">Exercise 7.2</a></li>
+                        <li><a href="#exercise7.3">Exercise 7.3</a></li>
+                        <li><a href="#exercise7.4">Exercise 7.4</a></li>
+                        <li><a href="#exercise7.5">Exercise 7.5</a></li>
+                        <li><a href="#exercise7.6">Exercise 7.6</a></li>
+                        <li><a href="#exercise7.7">Exercise 7.7</a></li>
+                        <li><a href="#exercise7.8">Exercise 7.8</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<!-- UNIT 1=================================================================================== -->
+        <div class="content">
+            <h1>Unit 1</h1>
+            <div class="topic">
+                <h2>Circuits and Gates</h2>
+
+<div class="exercise-container" id="exercise7.1">
+    <p class="exercise-description">[7.1] How are 1s and 0s represented in the hardware of a computer?</p>
+    <button class="show-solution-btn" onclick="showSolution(7.1)">Show Solution</button>
+    <div id="solution7.1" class="solution" style="display: none;">
+        <p>In hardware, bits are represented as electrical voltage. A high level of voltage is considered a 1; a low level of voltage is considered a 0.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise7.2">
+    <p class="exercise-description">[7.2] Why do we need gates? What do they do?</p>
+    <button class="show-solution-btn" onclick="showSolution(7.2)">Show Solution</button>
+    <div id="solution7.2" class="solution" style="display: none;">
+        <p>They are abstracted circuit components. They essentially have the same effect as a Boolean operation, but with bits as input/output instead of True/False values where 1 corresponds to True and 0 corresponds to False. They are used to control the flow of information.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise7.3">
+    <p class="exercise-description">[7.3] What is a half adder? Why do we use it? What is a full adder? Why do we use it?</p>
+    <button class="show-solution-btn" onclick="showSolution(7.3)">Show Solution</button>
+    <div id="solution7.3" class="solution" style="display: none;">
+        <p>The Half Adder is a type of logic circuit that adds two of the 1-bit binary digits together. When adding two numbers, we might need to carry an output over to the next column of the addition. This is why a half adder is useful. The Full Adder is also a type of logic gate that adds three inputs (3 bits) and produces two outputs. To add multiple bits together we can just chain together the full adder multiple times.</p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise7.4">
+    <p class="exercise-description">[7.4] What are the three basic gates? How do they operate at the high level?</p>
+    <button class="show-solution-btn" onclick="showSolution(7.4)">Show Solution</button>
+    <div id="solution7.4" class="solution" style="display: none;">
+        <p>
+            <br>- An AND gate takes two inputs and outputs 1 only if both inputs were 1.
+            <br>- An OR gate takes two inputs and outputs 1 if either input was 1.
+            <br>- A NOT gate takes one input and outputs the reverse (1 becomes 0, 0 becomes 1).
+        </p>
+    </div>
+</div>
+
+<div class="exercise-container" id="exercise7.5">
+    <p class="exercise-description">[7.5] Why do we need three representations (boolean expressions, circuits and truth tables)?</p>
+    <button class="show-solution-btn" onclick="showSolution(7.5)">Show Solution</button>
+    <div id="solution7.5" class="solution" style="display: none;">
+        <p>All three are different representations of logic; however, the representations for each accomplish a different goal. 
+            <br>-Boolean expressions provide a formal language for expressing logic (i.e., and, or, and not in Python). 
+            <br>-Circuits are concrete implementations of logic using physical or abstract components (i.e., in our CPU). 
+            <br>-Truth tables are a systematic way to analyze and verify the behavior of Boolean expressions or circuits (for our understanding).</p>
+    </div>
+</div>
+
+
+<div class="exercise-container" id="exercise7.6">
+    <p class="exercise-description">[7.6] Convert the following boolean expressions to truth tables and circuits.
+
+        <ul>
+    <li>not A</li>
+    <li>A or B</li>
+    <li>A and B</li>
+    <li>(not A) or (B and C)</li>
+    <li>not ((A and B) or (C or D))</li>
+  </ul>
+    </p>
+    <button class="show-solution-btn" onclick="showSolution(7.6)">Show Solution</button>
+    <div id="solution7.6" class="solution" style="display: none;">
+
+<p>For truth tables, you can use 1/0, or true/false, or T/F</p>
+
+<p>Truth Table: not A</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>not A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Truth Table: A or B</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A or B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Truth Table: A and B</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>A and B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Truth Table: (not A) or (B and C)</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>not A</th>
+      <th>B and C</th>
+      <th>(not A) or (B and C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Truth Table: not ((A and B) or (C or D))</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>(A and B) or (C or D)</th>
+      <th>not ((A and B) or (C or D))</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Truth Table: (A or (B and (not C))) and (C and B and (not A))</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>not C</th>
+      <th>B and (not C)</th>
+      <th>A or (B and (not C))</th>
+      <th>C and B and (not A)</th>
+      <th>(A or (B and (not C))) and (C and B and (not A))</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+ <img src="images/ex7-6.png" style="width: 650px">
+       
+    </div>
+</div>
+
+                <div class="exercise-container" id="exercise7.7">
+                    <p class="exercise-description">[7.7] Write the boolean expression and truth table for the circuit below.
+
+                         <img src="images/ex7-7.png" style="width: 650px">
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(7.7)">Show Solution</button>
+                    <div id="solution7.7" class="solution" style="display: none;">
+                        <p>
+
+<p>Boolean expression: not ((A and B) or C)</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>(A and B) or C</th>
+      <th>not ((A and B) or C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+    </tr>
+  </tbody>
+</table>
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="exercise-container" id="exercise7.8">
+                    <p class="exercise-description">[7.8] Write the boolean expression and truth table for the circuit below.
+
+                         <img src="images/ex7-8.png" style="width: 650px">
+
+                    </p>
+                    <button class="show-solution-btn" onclick="showSolution(7.8)">Show Solution</button>
+                    <div id="solution7.8" class="solution" style="display: none;">
+                        <p>
+<p>Boolean expression: (not ((A xor B) or C)) and D</p>
+<table>
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>A xor B</th>
+      <th>(A xor B) or C</th>
+      <th>not ((A xor B) or C)</th>
+      <th>(not ((A xor B) or C)) and D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>false</td>
+      <td>true</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================================= -->     
+            </div>
+
+        </div>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
